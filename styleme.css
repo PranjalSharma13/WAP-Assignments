@@ -1,0 +1,43 @@
+
+body {
+  
+    background-color: #908f8f; 
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(61, 73, 83);
+    font-family: "Arial Black", cursive; 
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+
+p{
+    font-family: cursive; 
+}
+
+li {
+    margin: 5px 0; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.checkers {
+    text-align: left;
+}
+.checkers a {
+    display: inline-block;
+    width: 45%;
+    margin: 0px;
+}
