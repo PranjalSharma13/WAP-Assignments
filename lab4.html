@@ -10,57 +10,86 @@
 <body>
 
  <div class="form-stuff">
-       <div id="form-header"> <h3 class="form-title">WorkShop Registration</h3></div>
+       <div id="form-header"> <h3 class="form-title">WorkShop Registration</h3><h5>More Actions<i class="fa-sharp fa-solid fa-caret-down"></i></h5></div>
         <form>
             <div id="form-body">
             
             <div id="leftSide">
             <a href="#"> Register Now while seats are available</a>
+            <br/>
         
             <label for="firstName"> First Name<span>*</span></label>
-            <input type="text" id="firstName" name="firstName" >
+            <input type="text" id="firstName" name="firstName" required >
 
             <label for="lastName" >Last Name<span>*</span></label>
-            <input type="text" id="lastName" name="lastName" >
+            <input type="text" id="lastName" name="lastName"  required>
 
             <label for="company">Company/Institution<span>*</span></label>
-            <input type="text" id="company" name="company" >
+            <input type="text" id="company" name="company" required >
 
             <label for="address" >Address<span>*</span></label>
-            <input type="text" id="address" name="address" style="height: 15%;" >
+            <input type="text" id="address" name="address" style="height: 15%;" required >
 
             <label for="city">City:</label>
             <input type="text" id="city" name="city" >
 
-            <label for="email">State/Provience/Region</label>
+            <label for="stateRegion">State/Provience/Region</label>
             <select id="stateRegion" name="stateRegion">
                 <option value="Select"> - Select - </option>
-                <option value="State 1">Minnesota</option>
-                <option value="State 2">Iowa</option>
-                <option value="State 2">Michigan</option>
+                <option value="State1">Minnesota</option>
+                <option value="State2">Iowa</option>
+                <option value="State3">Michigan</option>
+               
+            </select>
+            <br/>
+
+            <label for="stateRegion">Country</label>
+            <select id="country" name="country">
+                <option value="Select"> - Select - </option>
+                <option value="country1">Canada</option>
+                <option value="country2">US</option>
+                <option value="country3">Mexico</option>
                
             </select>
         
-
-            <label for="email"> Country:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-            <label for="email">Phone Number<span>*</span>:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            <br/>
+            <label for="email">Email<span>*</span></label>
+            <input type="email" id="email" name="email"  required>
+            <label for="phone">Phone Number<span>*</span></label>
+            <input type="tel" id="phone" name="phone"  required>
 
         </div>
         <div id="rightSide">
+            <a href="#"> Lunch</a><br/>
+           
             <label for="email">Meal Preference </label>
-            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            <input type="text" id="meal" name="meal" ><br>
+            <a href="#"> Payment Details</a><br/>
+            <label for="payment-mode">Payment Mode:</label><br/>
+   
+    <label for="cash">Cash</label>
+    <input type="checkbox" id="cash" name="payment-mode" value="cash">
+    
+    <label for="cheque">Cheque</label>
+    <input type="checkbox" id="cheque" name="payment-mode" value="cheque">
 
-            <label for="email">Phone Number:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+   
+    <label for="demand-draft">Demand Draft</label>
+    <input type="checkbox" id="demand-draft" name="payment-mode" value="demand-draft"><br>
+    <label for="cheque" >DD/Cheque Number</label>
+            <input type="text" id="cheque" name="cheque" >
+
+            <label for="drawnon">Drawn On (Bank Name) </label>
+            <input type="text" id="drawnon" name="drawnon" >
+            <label for="pay">Payable At</label>
+            <input type="text" id="pay" name="pay" >
 
         </div>
     </div>
-            <input type="submit" value="Submit">
+    <div id="button-container">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
         </form>
     </div>
     

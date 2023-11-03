@@ -1,6 +1,6 @@
 
 * {
-    margin: 1%;
+   
     padding: 5;
     box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
     justify-content: center; 
     align-items: center;
     height: 100vh; 
-    margin: 0; 
+    margin: 6%; 
 }
 
 .form-stuff {
@@ -19,10 +19,25 @@ body {
     border: 2px solid aqua;
 }
 
-#form-header {
+/* #form-header {
     background-color: aquamarine;
     padding: 1px;
    
+} */
+#form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 1px;
+}
+
+.form-title {
+    margin: 1%; 
+}
+
+h5 {
+    margin-right: 66%;
 }
 
 #form-body
@@ -33,6 +48,7 @@ display: flex;
 #leftSide, #rightSide {
     flex: 1; 
     padding: 20px; 
+    
 }
 
 #rightSide {
@@ -55,4 +71,17 @@ span
 }
 a{
     padding: 5%;
+    color: black;
+}
+
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray; 
+    padding: 10px;
+}
+
+#button-container input {
+    margin: 0 10px; 
 }
