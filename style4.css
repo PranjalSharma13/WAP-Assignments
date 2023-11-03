@@ -1,0 +1,58 @@
+
+* {
+    margin: 1%;
+    padding: 5;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.form-stuff {
+    
+    border: 2px solid aqua;
+}
+
+#form-header {
+    background-color: aquamarine;
+    padding: 1px;
+   
+}
+
+#form-body
+{
+display: flex;
+}
+
+#leftSide, #rightSide {
+    flex: 1; 
+    padding: 20px; 
+}
+
+#rightSide {
+    background-color: lightgray; 
+}
+label {
+    display: inline-block;
+    width: 150px; 
+    text-align: right; 
+    margin: 3% 1% 1% 1%;
+}
+
+input {
+    display: inline-block;
+    width: 200px; 
+}
+span
+{
+    color: red;
+}
+a{
+    padding: 5%;
+}
