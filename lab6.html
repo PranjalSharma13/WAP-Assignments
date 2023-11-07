@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <style>
+        img{
+            height: 350px;
+            width: 500px;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Exercise 1</h1>
+    <img src="./Images/no1.jpeg"/>
+      <h5>undefined 30</h56>
+      <h5>10 30</h5>
+    <h1>Exercise 2</h1>
+    <img src="./Images/no2.jpeg"/>
+        <h5>3 undefined</h5>
+        <h5>10 undefined</h5>
+    <h1>Exercise 3</h1>
+    <p id="output"></p>
+    <script>
+        function printNumbers(from, to) {
+            const res = document.getElementById('output');
+
+            const intervalId = setInterval(function() {
+                res.textContent = from;
+             if (from === to) {
+                      clearInterval(intervalId); 
+            }
+
+                  from++;
+        }, 1000); 
+        
+        }
+
+        printNumbers(1, 10); 
+
+    </script>
+</body>
+</html>
