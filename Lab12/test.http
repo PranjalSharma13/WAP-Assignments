@@ -1,0 +1,18 @@
+ POST http://localhost:3000/products/
+ Content-Type: application/json
+
+ {"name":"cat"}
+
+###
+GET http://localhost:3000/products/
+ Content-Type: application/json
+
+###
+ POST http://localhost:3000/products/
+ Content-Type: application/json
+
+ {"name":"dog"}
+
+###
+GET http://localhost:3000/users/
+ Content-Type: application/json
