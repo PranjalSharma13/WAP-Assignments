@@ -1,0 +1,48 @@
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/books
+
+###
+GET http://localhost:3000/products/2
+Content-Type: application/javascript
+
+###
+GET http://localhost:3000/books/2
+Content-Type: application/javascript
+
+###
+POST http://localhost:3000/products
+Content-Type: application/javascript
+
+{ 
+    "title":"Apple",
+    "description":"Excellent",
+    "price":900
+}
+
+###
+POST  http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title":"Origins",
+    "isbn":"111111111",
+    "publishedDate":"2019-09-01",
+     "author":" Meeeee"
+}
+
+###
+PUT http://localhost:3000/products/2
+Content-Type: application/javascript
+
+{
+    "title":"Apple",
+    "description":"Excellent",
+    "price":900
+}
+
+
+###
+DELETE  http://localhost:3000/products/1
+Content-Type: application/javascript
