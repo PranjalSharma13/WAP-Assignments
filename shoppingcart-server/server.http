@@ -29,7 +29,7 @@ Content-Type: application/json
     "title":"Origins",
     "isbn":"111111111",
     "publishedDate":"2019-09-01",
-     "author":" Meeeee"
+     "author":" "
 }
 
 ###
